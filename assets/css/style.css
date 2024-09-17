@@ -16,8 +16,10 @@ body {
 }
 
 .col-2 {
-    width: calc((100% / 12) * 2);
-    height: 100%;
+    /* width: calc((100% / 12) * 2);
+    height: 100%; */
+    width: 100px;
+    height: auto;
     aspect-ratio: 1/1;
     background-color: blue;
 }
@@ -26,6 +28,7 @@ body {
 
 /* #region top */
 .top {
+
     height: calc(100% - 80px);
 
     .content {
@@ -54,6 +57,8 @@ body {
     .row {
         padding: 3rem;
         gap: 3rem;
+        background-color: pink;
+        flex-wrap: wrap;
     }
 }
 
@@ -64,4 +69,19 @@ body {
     height: 80px;
     background-color: purple;
 }
+
 /* #endregion bottom */
+
+/* #region media-query */
+@media screen and (max-width: 600px) {
+
+    .sidebar {
+        width: 60px !important;
+    }
+
+    .content {
+        width: calc(100% - 60px) !important;
+    }
+}
+
+/* #region media-query */
