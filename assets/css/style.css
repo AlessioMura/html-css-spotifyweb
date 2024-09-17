@@ -1,0 +1,67 @@
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: blue;
+}
+
+/* #endregion common */
+
+/* #region top */
+.top {
+    height: calc(100% - 80px);
+
+    .content {
+        width: calc(100% - 245px);
+    }
+
+    .content_header {
+        height: 80px;
+        background-color: aqua;
+    }
+
+    .content_main {
+        height: calc(100% - 80px);
+        background-color: green;
+        overflow: auto;
+    }
+
+    .sidebar {
+        width: 245px;
+        height: 100%;
+        background-color: red;
+    }
+}
+
+.container {
+    .row {
+        padding: 3rem;
+        gap: 3rem;
+    }
+}
+
+/* #endregion top */
+
+/* #region bottom */
+.bottom {
+    height: 80px;
+    background-color: purple;
+}
+/* #endregion bottom */
