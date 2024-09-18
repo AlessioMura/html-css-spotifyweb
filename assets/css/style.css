@@ -64,27 +64,44 @@ body {
         overflow: auto;
     }
 
-    .sidebar {
-        width: 245px;
-        height: 100%;
-        background-color: red;
-    }
+
 
     .container {
-        .recently_played {
 
-            padding-bottom: 4rem;
+        .recently_played,
+        .john_doe,
+        .popular {
+
+            padding-bottom: 3.5rem;
             padding-left: 2rem;
             gap: 1rem;
 
-            .col-2 {
-                width: calc((100% /12) *2);
-            }
+        }
 
+        .recently_played {
+            padding-right: 2rem;
+        }
+
+        /* .john_doe,
+        .popular {
             img {
-                width: 100%;
-                height: auto;
+                min-width: 100px;
             }
+        } */
+
+        .popular {
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .col-2 {
+            width: calc((100% /12) *2);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
         }
 
         .sect_title {
@@ -93,17 +110,19 @@ body {
 
         .sect_subtitle {
             color: var(--text-unhover);
-            padding-left: 2rem;
+            padding: .5rem 0 2rem 2rem;
         }
 
         .album_title {
             color: white;
             text-align: center;
+            padding-top: 1rem;
         }
 
         .album_subtitle {
             color: var(--text-unhover);
             text-align: center;
+            padding-top: .5rem;
         }
     }
 
@@ -132,6 +151,12 @@ body {
         }
     }
 
+}
+
+.sidebar {
+    width: 245px;
+    height: 100%;
+    background-color: red;
 }
 
 h2 {
