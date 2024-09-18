@@ -16,6 +16,7 @@ body {
     --bg-main: #141922;
     --bg-sidebar: #000000;
     --bg-footer: #282828;
+    --text-unhover: #707277;
 }
 
 .d-flex {
@@ -66,7 +67,7 @@ body {
 
     .content_main {
         height: calc(100% - 80px);
-        background-color: green;
+        background-color: var(--bg-main);
         overflow: auto;
     }
 
@@ -75,16 +76,43 @@ body {
         height: 100%;
         background-color: red;
     }
+
+    .container {
+        .row {
+            padding: 3rem;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    .menu_list {
+        ul {
+            list-style: none;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            line-height: 2rem;
+
+            .btm_border {
+                color: rgb(2, 201, 2);
+                margin: 0 2rem;
+            }
+
+            a {
+                color: var(--text-unhover);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+
 }
 
-.container {
-    .row {
-        padding: 3rem;
-        gap: 3rem;
-        background-color: pink;
-        flex-wrap: wrap;
-    }
-}
+
 
 /* #endregion top */
 
