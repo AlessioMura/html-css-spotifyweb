@@ -23,14 +23,7 @@ body {
     display: flex;
 }
 
-.col-2 {
-    /* width: calc((100% / 12) * 2);
-    height: 100%; */
-    width: 100px;
-    height: auto;
-    aspect-ratio: 1/1;
-    background-color: blue;
-}
+
 
 /* #endregion common */
 
@@ -78,10 +71,39 @@ body {
     }
 
     .container {
-        .row {
-            padding: 3rem;
-            gap: 3rem;
-            flex-wrap: wrap;
+        .recently_played {
+
+            padding-bottom: 4rem;
+            padding-left: 2rem;
+            gap: 1rem;
+
+            .col-2 {
+                width: calc((100% /12) *2);
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .sect_title {
+            padding-bottom: 1.5rem;
+        }
+
+        .sect_subtitle {
+            color: var(--text-unhover);
+            padding-left: 2rem;
+        }
+
+        .album_title {
+            color: white;
+            text-align: center;
+        }
+
+        .album_subtitle {
+            color: var(--text-unhover);
+            text-align: center;
         }
     }
 
@@ -112,7 +134,10 @@ body {
 
 }
 
-
+h2 {
+    color: white;
+    padding-left: 2rem;
+}
 
 /* #endregion top */
 
@@ -125,7 +150,7 @@ body {
 /* #endregion bottom */
 
 /* #region media-query */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
 
     .sidebar {
         width: 60px !important;
