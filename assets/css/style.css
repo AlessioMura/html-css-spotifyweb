@@ -9,6 +9,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background: #000;
+    
 }
 
 :root {
@@ -124,6 +125,23 @@ body {
             text-align: center;
             padding-top: .5rem;
         }
+
+        .album_img {
+            position: relative;
+        }
+
+        .play_btn {
+            color: white;
+            position: absolute;
+            z-index: 1;
+            right: 30%;
+            top: 30%;
+            font-size: 300%;
+            display: none;
+        }
+        .album_img:hover .play_btn{
+            display: block;
+        }
     }
 
     .menu_list {
@@ -175,15 +193,46 @@ h2 {
 /* #endregion bottom */
 
 /* #region media-query */
+
+@media screen and (max-width: 1100px) {
+    .recently_played {
+        flex-wrap: wrap;
+
+        .col-2 {
+            width: calc((100% /12) *3) !important;
+
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .recently_played {
+        flex-wrap: wrap;
+
+        .col-2 {
+            width: calc((100% /12) *4) !important;
+
+        }
+    }
+}
+
 @media screen and (max-width: 550px) {
 
     .sidebar {
-        width: 60px !important;
+        width: 60px;
     }
 
     .content {
         width: calc(100% - 60px) !important;
+        flex-wrap: wrap;
+
+        .recently_played {
+            .col-2 {
+                width: calc((100% /12) *5) !important;
+            }
+        }
     }
+
 }
 
 /* #region media-query */
