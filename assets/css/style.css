@@ -11,6 +11,13 @@ body {
     background: #000;
 }
 
+:root {
+    --bg-header: #080b12;
+    --bg-main: #141922;
+    --bg-sidebar: #000000;
+    --bg-footer: #282828;
+}
+
 .d-flex {
     display: flex;
 }
@@ -37,7 +44,24 @@ body {
 
     .content_header {
         height: 80px;
-        background-color: aqua;
+        background-color: var(--bg-header);
+        justify-content: end;
+        align-items: center;
+
+
+        .btn {
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 2rem;
+            padding: .5rem 2.5rem;
+            margin-right: 1rem;
+
+        }
+
+        .btn:hover {
+            padding: 1rem 3rem;
+        }
     }
 
     .content_main {
