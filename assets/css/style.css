@@ -9,7 +9,7 @@ body {
     height: 100vh;
     overflow: hidden;
     background: #000;
-    
+
 }
 
 :root {
@@ -24,7 +24,10 @@ body {
     display: flex;
 }
 
-
+h2 {
+    color: white;
+    padding-left: 2rem;
+}
 
 /* #endregion common */
 
@@ -37,6 +40,7 @@ body {
         width: calc(100% - 245px);
     }
 
+    /* #region content head */
     .content_header {
         height: 80px;
         background-color: var(--bg-header);
@@ -59,6 +63,9 @@ body {
         }
     }
 
+    /* #endregion content head */
+
+    /* #region content body */
     .content_main {
         height: calc(100% - 80px);
         background-color: var(--bg-main);
@@ -82,13 +89,6 @@ body {
         .recently_played {
             padding-right: 2rem;
         }
-
-        /* .john_doe,
-        .popular {
-            img {
-                min-width: 100px;
-            }
-        } */
 
         .popular {
             img {
@@ -139,7 +139,8 @@ body {
             font-size: 300%;
             display: none;
         }
-        .album_img:hover .play_btn{
+
+        .album_img:hover .play_btn {
             display: block;
         }
     }
@@ -168,19 +169,54 @@ body {
             }
         }
     }
-
 }
 
+/* #endregion content body */
+
+/* #region sidebar */
 .sidebar {
     width: 245px;
     height: 100%;
-    background-color: red;
+    background-color: var(--bg-sidebar);
+
+    .logo {
+        padding: 1.5rem 3rem 2rem 1rem;
+    }
+
+    .home,
+    .search,
+    .library {
+        padding-left: 1.5rem;
+        padding-bottom: 10px;
+        align-items: center;
+
+        .logo_menu {
+            width: 30px;
+        }
+
+        .txt_menu {
+            padding-left: 10px;
+            a {
+                color: var(--text-unhover);
+                text-decoration: none;
+            }
+        }
+
+        a:hover {
+            color: white;
+        }
+
+    }
+    .playlist{
+        .playlist_title{
+            color: white;
+            padding: 2rem 0 1rem 1.5rem;
+        }
+        .crea_playlist
+    }
 }
 
-h2 {
-    color: white;
-    padding-left: 2rem;
-}
+/* #endregion sidebar */
 
 /* #endregion top */
 
@@ -198,10 +234,11 @@ h2 {
     .recently_played {
         flex-wrap: wrap;
 
-        .col-2 {
-            width: calc((100% /12) *3) !important;
+    }
 
-        }
+    .col-2 {
+        width: calc((100% /12) *3) !important;
+
     }
 }
 
@@ -209,10 +246,11 @@ h2 {
     .recently_played {
         flex-wrap: wrap;
 
-        .col-2 {
-            width: calc((100% /12) *4) !important;
+    }
 
-        }
+    .col-2 {
+        width: calc((100% /12) *4) !important;
+
     }
 }
 
@@ -226,10 +264,8 @@ h2 {
         width: calc(100% - 60px) !important;
         flex-wrap: wrap;
 
-        .recently_played {
-            .col-2 {
-                width: calc((100% /12) *5) !important;
-            }
+        .col-2 {
+            width: calc((100% /12) *5) !important;
         }
     }
 
