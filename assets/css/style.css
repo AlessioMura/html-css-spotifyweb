@@ -173,14 +173,16 @@ h2 {
     /* #endregion content body */
 }
 
-
-
 /* #region sidebar */
 .sidebar {
     width: 245px;
     height: 100%;
     background-color: var(--bg-sidebar);
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
 
+    /* #region sidebar top */
     .logo {
         padding: 1.5rem 3rem 2rem 1rem;
     }
@@ -216,7 +218,52 @@ h2 {
             color: white;
             padding: 2rem 0 1rem 1.5rem;
         }
+
+        .playlist_logo {
+            color: black;
+            padding: 10px;
+            background-color: var(--text-unhover);
+            margin-left: 1rem;
+            font-size: 30px;
+        }
+
+        .playlist_txt {
+            color: var(--text-unhover);
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 10px;
+            align-items: center;
+        }
+
+        i:hover {
+            background-color: white;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .playlist_list {
+            padding-top: 2rem;
+
+            a {
+                text-decoration: none;
+                padding-left: 1.5rem;
+                line-height: 2.5rem;
+                color: var(--text-unhover);
+                font-size: 20px;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
     }
+
+    /* #endregion sidebar top */
+    /* #region sidebar bottom */
+    /* #endregion sidebar bottom */
+
 }
 
 /* #endregion sidebar */
