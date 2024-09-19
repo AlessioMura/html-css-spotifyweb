@@ -53,18 +53,21 @@
                         </ul>
                     </nav>
                 </div>
+                <!-- /playlist -->
             </div>
             <div class="side_bottom">
                 <div class="download d-flex">
                     <div class="download_img"><img src="./assets/img/download.svg" alt=""></div>
                     <div class="download_link"><a href="">Installa App</a></div>
                 </div>
+                <!-- /download -->
                 <hr>
                 <div class="profile d-flex">
                     <div class="profile_img"><img src="./assets/img/profile.svg" alt=""></div>
                     <div class="profile_link"><a href="">John Doe</a></div>
                 </div>
             </div>
+            <!-- /profile -->
         </div>
         <div class="content">
             <div class="content_header d-flex">
@@ -188,7 +191,43 @@
             </div>
         </div>
     </div>
-    <footer class="bottom"></footer>
+    <footer class="bottom d-flex">
+        <div class="playing d-flex col-4">
+            <div><img class="playing_img" src="./assets/img/sinister.jpeg" alt=""></div>
+            <div class="playing_txt">
+                <h4>Sinister</h4>
+                <h5><a href="">Brano Nome</a></h5>
+            </div>
+            <div class="d-flex"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-folder"></i></div>
+        </div>
+        <div class="track_bar d-flex col-4">
+            <div class="track_btns d-flex">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+
+            <div class="time_stamp d-flex">
+                <div class="time">0:25</div>
+                <div class="time_bar d-flex">
+                    <div class="played"></div>
+                    <div class="remaining"></div>
+                </div>
+                <div class="time">4:35</div>
+            </div>
+        </div>
+        <div class="volume d-flex col-4">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-display"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="volume_bar d-flex">
+                <div class="played"></div>
+                <div class="remaining"></div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
