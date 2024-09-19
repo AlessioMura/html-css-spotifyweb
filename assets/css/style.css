@@ -187,7 +187,11 @@ h2 {
 
     /* #region sidebar top */
     .logo {
-        padding: 1.5rem 3rem 2rem 1rem;
+        padding: 1.5rem 3rem 1.5rem 1rem;
+    }
+
+    .logo_sm {
+        display: none;
     }
 
     .home,
@@ -314,6 +318,7 @@ h2 {
 
             .profile_link {
                 padding-left: 1rem;
+
                 a {
                     font-size: 20px;
                     color: white;
@@ -367,11 +372,25 @@ h2 {
 @media screen and (max-width: 550px) {
 
     .sidebar {
-        width: 60px;
+        width: 80px;
+
+        .logo,
+        .txt_menu,
+        .playlist,
+        .download_link,
+        .profile_link {
+            display: none !important;
+        }
+
+        .logo_sm {
+            margin: 1.3rem;
+            display: block;
+            width: 40px;
+        }
     }
 
     .content {
-        width: calc(100% - 60px) !important;
+        width: calc(100% - 80px) !important;
         flex-wrap: wrap;
 
         .col-2 {
