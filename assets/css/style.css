@@ -173,6 +173,8 @@ h2 {
     /* #endregion content body */
 }
 
+/* #endregion top */
+
 /* #region sidebar */
 .sidebar {
     width: 245px;
@@ -181,6 +183,7 @@ h2 {
     overflow: hidden;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
 
     /* #region sidebar top */
     .logo {
@@ -196,6 +199,11 @@ h2 {
 
         .logo_menu {
             width: 30px;
+            opacity: 50%;
+        }
+
+        .logo_menu:hover {
+            opacity: 100%;
         }
 
         .txt_menu {
@@ -261,14 +269,66 @@ h2 {
     }
 
     /* #endregion sidebar top */
+
     /* #region sidebar bottom */
+    .side_bottom {
+        .download {
+            align-items: center;
+            padding: 1rem;
+
+            .download_img {
+                width: 35px;
+                padding-right: 10px;
+                opacity: 50%;
+            }
+
+            .download_img:hover {
+                opacity: 100%;
+            }
+
+            a {
+                color: var(--text-unhover);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+
+        hr {
+            color: var(--text-unhover);
+        }
+
+        .profile {
+            align-items: center;
+            padding: 1rem;
+
+            .profile_img {
+                width: 30px;
+                height: 30px;
+                background-color: var(--text-unhover);
+                border-radius: 100%;
+                padding: 5px;
+            }
+
+            .profile_link {
+                padding-left: 1rem;
+                a {
+                    font-size: 20px;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+
     /* #endregion sidebar bottom */
 
 }
 
 /* #endregion sidebar */
-
-/* #endregion top */
 
 /* #region bottom */
 .bottom {
